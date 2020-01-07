@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Xonix</string>
+    <string name="Photo_string">Фотографии</string>
+    <string name="Add_life_string">Увеличение жизней</string>
+    <string name="Bonus_string">Бонусы</string>
+    <string name="todo">TODO</string>
+    <string name="Redraw_display_string">Частота обновления экрана</string>
+    <string name="Start_game_string">Начать игру</string>
 </resources>

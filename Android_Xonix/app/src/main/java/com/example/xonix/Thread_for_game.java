@@ -19,6 +19,8 @@ import java.util.Random;
 //import static com.example.xonix.MainActivity.REDRAW_TIME;
 import static androidx.core.content.ContextCompat.getSystemService;
 import static com.example.xonix.MainActivity.REDRAW_TIME;
+import static com.example.xonix.MainActivity.add_life_flag;
+import static com.example.xonix.MainActivity.bonus_flag;
 import static com.example.xonix.MainActivity.vibrator;
 import static com.example.xonix.Surface.FIELD_HEIGHT;
 import static com.example.xonix.Surface.FIELD_WIDTH;
@@ -87,8 +89,10 @@ public class Thread_for_game extends Thread {
                         xonix.move();
                         balls.move();
                         cube.move();
-                        bonuses.add();
-                        bonuses.check_collect_bonus();
+                        if (bonus_flag) {
+                            bonuses.add();
+                            bonuses.check_collect_bonus();
+                        }
                         draw(canvas);
                         if (xonix.isSelfCrosed() || balls.isHitTrackOrXonix() || cube.isHitXonix()) {//Если Xonix ранен
                             vibrator.vibrate(200);
@@ -108,6 +112,7 @@ public class Thread_for_game extends Thread {
                             xonix.level_up();
                             cube.init();
                             balls.add();
+                            if (add_life_flag) xonix.addCountLives(1);
                         }
                     }
                 } catch (NullPointerException e) {
@@ -253,7 +258,7 @@ public class Thread_for_game extends Thread {
 
         void level_up() {level++;}
 
-        void addCountLives() {countLives++;}
+        void addCountLives( int i) {countLives += i;}
 
         void move() {
             if (Math.abs(getXr()) > Math.abs(getYr()))  {
@@ -453,7 +458,7 @@ public class Thread_for_game extends Thread {
             for (Bonus bonus : bonuses) {
                 if (field.getColor(bonus.getX(),bonus.getY()) == 1) {
                     if (bonus.getType() == 1) {
-                        xonix.addCountLives();
+                        xonix.addCountLives(1);
                         bonuses.remove(bonus);
                         break;
                     }
@@ -533,7 +538,7 @@ public class Thread_for_game extends Thread {
         xonix.setLevel(1);
         balls.remove();
         balls.add();
-        bonuses.remove();
+        if (bonus_flag) bonuses.remove();
         cube.init();
         field.init();
         field.setCountScore(0);

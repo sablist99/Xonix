@@ -4,24 +4,37 @@ ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\Androi
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:2:1-32:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\16e34cc941ca560f1ce786850088f542\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a136933342b0efb06224178e8f312868\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4ca888909098fbb126e9c0a2aed2b666\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\174a07e2200444e8c29705bf4044975d\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\37b07b0af1af2aafd34c7f4178894857\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4e2b5312859a4add836ca427f9185971\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a2820c8ee6ea054be8163c452f7d6b39\transition-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\bc5fd2321421e1868cfcd17b87b15ef9\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\35c3fbd601ae0234480e07fc02c66070\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\72cc2478f42bf4d829dcb3478add6e5e\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\19e3fb01ae0f423b92b0a842cef1eea1\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a9085bced204d4d32722ec59df541dd\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8bebfd56772390b0c7c5a30636a918a8\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\521f36082ba2ebfff3134b14049d8392\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\1410242d4ef985e32783d8097bac5af8\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\80daeaca6f036ab992d59d7f985648c0\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\ba941ec3e51f9e63a28205390b7e1196\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\7ddf3b3453ff2ae36284abc49da050c2\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a157abb854187fccd45caa1b51d7a6d\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\6cb605609ce3e0233def045dd08f32ea\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\0deac3d3d16d2e78b1287e76bd401cad\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a4800bd69aa5f1fb4a3075fb1b945104\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\728270ae329d44b91e2272f2a2469b7f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\424f8cee47ad96d5bf5ccdac145707ac\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d7e63329afa368247e963671bc71f705\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\418d362530dffb7091b597020259faaa\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\affbc15689144f386447e510fca45ba6\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3315cd4f34fecbb914c0547ad83f8664\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\f33aa17185c3708a5ad836b0b67dcf82\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4035bab8ba83c8378e720680d30eb8a9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
@@ -48,6 +61,8 @@ ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\Androi
 		ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:5:22-63
 application
 ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:6:5-26:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\16e34cc941ca560f1ce786850088f542\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\16e34cc941ca560f1ce786850088f542\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\7ddf3b3453ff2ae36284abc49da050c2\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -98,6 +113,8 @@ uses-sdk
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\16e34cc941ca560f1ce786850088f542\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\16e34cc941ca560f1ce786850088f542\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a136933342b0efb06224178e8f312868\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a136933342b0efb06224178e8f312868\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
@@ -106,8 +123,16 @@ MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Potap\.gradle\caches\tra
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4ca888909098fbb126e9c0a2aed2b666\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\174a07e2200444e8c29705bf4044975d\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\174a07e2200444e8c29705bf4044975d\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\37b07b0af1af2aafd34c7f4178894857\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\37b07b0af1af2aafd34c7f4178894857\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4e2b5312859a4add836ca427f9185971\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\4e2b5312859a4add836ca427f9185971\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a2820c8ee6ea054be8163c452f7d6b39\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a2820c8ee6ea054be8163c452f7d6b39\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\bc5fd2321421e1868cfcd17b87b15ef9\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\bc5fd2321421e1868cfcd17b87b15ef9\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\35c3fbd601ae0234480e07fc02c66070\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -118,22 +143,38 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Pot
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\19e3fb01ae0f423b92b0a842cef1eea1\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a9085bced204d4d32722ec59df541dd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a9085bced204d4d32722ec59df541dd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8bebfd56772390b0c7c5a30636a918a8\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\8bebfd56772390b0c7c5a30636a918a8\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\521f36082ba2ebfff3134b14049d8392\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\521f36082ba2ebfff3134b14049d8392\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\1410242d4ef985e32783d8097bac5af8\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\1410242d4ef985e32783d8097bac5af8\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\80daeaca6f036ab992d59d7f985648c0\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\80daeaca6f036ab992d59d7f985648c0\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\ba941ec3e51f9e63a28205390b7e1196\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\ba941ec3e51f9e63a28205390b7e1196\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\7ddf3b3453ff2ae36284abc49da050c2\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\7ddf3b3453ff2ae36284abc49da050c2\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a157abb854187fccd45caa1b51d7a6d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3a157abb854187fccd45caa1b51d7a6d\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\6cb605609ce3e0233def045dd08f32ea\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\6cb605609ce3e0233def045dd08f32ea\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\0deac3d3d16d2e78b1287e76bd401cad\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\0deac3d3d16d2e78b1287e76bd401cad\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a4800bd69aa5f1fb4a3075fb1b945104\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\a4800bd69aa5f1fb4a3075fb1b945104\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\728270ae329d44b91e2272f2a2469b7f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\728270ae329d44b91e2272f2a2469b7f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\424f8cee47ad96d5bf5ccdac145707ac\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\424f8cee47ad96d5bf5ccdac145707ac\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d7e63329afa368247e963671bc71f705\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d7e63329afa368247e963671bc71f705\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\418d362530dffb7091b597020259faaa\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\418d362530dffb7091b597020259faaa\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\affbc15689144f386447e510fca45ba6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\affbc15689144f386447e510fca45ba6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\d9e1c8e93250f2776f11901c821c4137\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3315cd4f34fecbb914c0547ad83f8664\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\3315cd4f34fecbb914c0547ad83f8664\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Potap\.gradle\caches\transforms-2\files-2.1\f33aa17185c3708a5ad836b0b67dcf82\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
