@@ -659,6 +659,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable fon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -680,6 +681,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id REDRAW_seekBar
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -774,6 +776,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -847,6 +850,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView2
 id time
 id title
 id titleDividerNoCustom

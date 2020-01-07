@@ -1,18 +1,25 @@
 package com.example.xonix;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.os.Vibrator;
 import android.view.SurfaceHolder;
 import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.Random;
 
+//import static com.example.xonix.MainActivity.REDRAW_TIME;
+import static androidx.core.content.ContextCompat.getSystemService;
+import static com.example.xonix.MainActivity.REDRAW_TIME;
+import static com.example.xonix.MainActivity.vibrator;
 import static com.example.xonix.Surface.FIELD_HEIGHT;
 import static com.example.xonix.Surface.FIELD_WIDTH;
 import static com.example.xonix.Surface.POINT_SIZE;
@@ -27,9 +34,8 @@ public class Thread_for_game extends Thread {
     private long tfg_StartTime; //время начала анимации
     private long tfg_PrevRedrawTime; //предыдущее время перерисовки
     private final SurfaceHolder tfg_SurfaceHolder; //нужен, для получения canvas
-    private final int REDRAW_TIME    = 10; //частота обновления экрана - 10 мс
     private final int PERCENT_OF_WATER_CAPTURE = 75;
-    private final int SLEEP_FOR_NEW_LVL = 1000;
+    private final int SLEEP_FOR_NEW_LVL = 500;
 
     private Field field = new Field();
     private Random random = new Random();
@@ -37,13 +43,15 @@ public class Thread_for_game extends Thread {
     private Balls balls = new Balls();
     private Cube cube = new Cube();
     private Bonuses bonuses = new Bonuses();
+    private Delay delay = new Delay();
 
-    final String COLOR_BONUS = "#a8ff00";
-    final String COLOR_WATER = "#00012d";
-    final String COLOR_LAND = "#17ab75";
-    final String COLOR_TRACK = "#00c6ff";
-    final String COLOR_WHITE = "#ffffff";
-    final String COLOR_BALL = "#e81b3d";
+    private final String COLOR_BONUS = "#a8ff00";
+    private final String COLOR_WATER = "#00012d";
+    private final String COLOR_LAND = "#17ab75";
+    private final String COLOR_TRACK = "#00c6ff";
+    private final String COLOR_WHITE = "#ffffff";
+    private final String COLOR_BALL = "#e81b3d";
+
 
 
     public Thread_for_game(SurfaceHolder holder) {
@@ -60,6 +68,7 @@ public class Thread_for_game extends Thread {
         return System.nanoTime() / 1_000_000;
     }
 
+    @SuppressLint("MissingPermission")
     @Override
     public void run() {
         Canvas canvas;
@@ -67,7 +76,7 @@ public class Thread_for_game extends Thread {
             while (tfg_Running) {
                 long curTime = getTime();
                 long elapsedTime = curTime - tfg_PrevRedrawTime;
-                if (elapsedTime < REDRAW_TIME) //проверяет, прошло ли 10 мс
+                if (elapsedTime < REDRAW_TIME) //проверяет, прошло ли REDRAW_TIME мс
                     continue;
                 //если прошло, перерисовываем картинку
                 canvas = null;
@@ -82,14 +91,18 @@ public class Thread_for_game extends Thread {
                         bonuses.check_collect_bonus();
                         draw(canvas);
                         if (xonix.isSelfCrosed() || balls.isHitTrackOrXonix() || cube.isHitXonix()) {//Если Xonix ранен
+                            vibrator.vibrate(200);
                             xonix.decreaseCountLives();
                             if (xonix.getCountLives() > 0) { //Есди игра продолжается
                                 xonix.init();
                                 field.clearTrack();
-                            } else new_game();//Если новая игра
+                            } else {
+                                vibrator.vibrate(500);
+                                new_game();//Если новая игра
+                            }
                         }
                         if (field.getCurrentPercent() >= PERCENT_OF_WATER_CAPTURE) {
-                            //Thread_for_game.sleep(SLEEP_FOR_NEW_LVL);
+                            //Если переходим на следующий уровень
                             field.init();
                             xonix.init();
                             xonix.level_up();
@@ -133,6 +146,12 @@ public class Thread_for_game extends Thread {
                         field[x][y] = 1;
                     else field[x][y] = 2;
             currentWaterArea = WATER_AREA;
+        }
+
+        void full_land() {
+            for (int y = 0; y < FIELD_HEIGHT; y++)
+                for (int x = 0; x < FIELD_WIDTH; x++)
+                    field[x][y] = 1;
         }
 
         int getColor(int x, int y) {
@@ -486,6 +505,14 @@ public class Thread_for_game extends Thread {
         int getType() {return type;}
     }
 
+    class Delay {
+        void wait(int milliseconds) {
+            try {
+                Thread.sleep(milliseconds);
+            } catch (Exception e) { e.printStackTrace(); }
+        }
+    }
+
     private void draw(Canvas canvas) {
         Paint paint = new Paint();
         paint.setColor(Color.WHITE);
@@ -497,7 +524,6 @@ public class Thread_for_game extends Thread {
         cube.paint(canvas);
         bonuses.paint(canvas);
 
-        canvas.drawBitmap(Surface.settings, 3 * POINT_SIZE, 3 * POINT_SIZE, paint);
         canvas.drawText("Level: " + xonix.getLevel() + "  Score: " + field.getCountScore() + "  Lives: " + xonix.getCountLives() + "  Full: " + field.getCurrentPercent() + "%", POINT_SIZE * 2, POINT_SIZE * (FIELD_HEIGHT - 2) - 3, paint);
     }
 
@@ -511,5 +537,6 @@ public class Thread_for_game extends Thread {
         cube.init();
         field.init();
         field.setCountScore(0);
+
     }
 }

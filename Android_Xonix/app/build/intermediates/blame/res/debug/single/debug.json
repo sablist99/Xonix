@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
-        "source": "C:\\Users\\Potap\\.gradle\\caches\\transforms-2\\files-2.1\\a136933342b0efb06224178e8f312868\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\Potap\\.gradle\\caches\\transforms-2\\files-2.1\\a136933342b0efb06224178e8f312868\\appcompat-1.1.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
+        "source": "C:\\Users\\Potap\\.gradle\\caches\\transforms-2\\files-2.1\\a136933342b0efb06224178e8f312868\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
@@ -48,12 +48,12 @@
         "source": "C:\\Users\\Potap\\.gradle\\caches\\transforms-2\\files-2.1\\7ddf3b3453ff2ae36284abc49da050c2\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\Potap\\.gradle\\caches\\transforms-2\\files-2.1\\a136933342b0efb06224178e8f312868\\appcompat-1.1.0\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -174,6 +174,10 @@
     {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fon.jpg.flat",
+        "source": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\src\\main\\res\\drawable\\fon.jpg"
     },
     {
         "merged": "C:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_tooltip.xml.flat",

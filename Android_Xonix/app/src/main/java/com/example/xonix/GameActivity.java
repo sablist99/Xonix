@@ -1,9 +1,12 @@
 package com.example.xonix;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import static com.example.xonix.Surface.POINT_SIZE;
 
 public class GameActivity extends AppCompatActivity {
     Surface surface;
@@ -33,9 +36,11 @@ public class GameActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         surface = null;
-        System.out.println("2");
+        //System.out.println("2");
 
     }
+
+
 
 
 }
