@@ -78,7 +78,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Po
 	android:roundIcon
 		ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:8:9-38
 	android:allowBackup
 		ADDED from C:\Users\Potap\Desktop\GitHub\Xonix\Android_Xonix\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
