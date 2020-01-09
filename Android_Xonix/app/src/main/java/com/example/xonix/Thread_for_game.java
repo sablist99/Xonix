@@ -1,26 +1,18 @@
 package com.example.xonix;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.os.Vibrator;
 import android.view.SurfaceHolder;
-import android.widget.Button;
-
 import java.util.ArrayList;
 import java.util.Random;
 
-//import static com.example.xonix.MainActivity.REDRAW_TIME;
-import static androidx.core.content.ContextCompat.getSystemService;
+import static com.example.xonix.MainActivity.PERCENT_OF_WATER_CAPTURE;
 import static com.example.xonix.MainActivity.REDRAW_TIME;
 import static com.example.xonix.MainActivity.add_life_flag;
 import static com.example.xonix.MainActivity.bonus_flag;
+import static com.example.xonix.MainActivity.photo_mode_flag;
 import static com.example.xonix.MainActivity.vibrator;
 import static com.example.xonix.Surface.FIELD_HEIGHT;
 import static com.example.xonix.Surface.FIELD_WIDTH;
@@ -36,8 +28,6 @@ public class Thread_for_game extends Thread {
     private long tfg_StartTime; //время начала анимации
     private long tfg_PrevRedrawTime; //предыдущее время перерисовки
     private final SurfaceHolder tfg_SurfaceHolder; //нужен, для получения canvas
-    private final int PERCENT_OF_WATER_CAPTURE = 75;
-    private final int SLEEP_FOR_NEW_LVL = 500;
 
     private Field field = new Field();
     private Random random = new Random();
@@ -49,14 +39,21 @@ public class Thread_for_game extends Thread {
 
     private final String COLOR_BONUS = "#a8ff00";
     private final String COLOR_WATER = "#00012d";
-    private final String COLOR_LAND = "#17ab75";
-    private final String COLOR_TRACK = "#00c6ff";
-    private final String COLOR_WHITE = "#ffffff";
+    private String COLOR_LAND;// = "#ff17ab75";
+    private final String COLOR_TRACK = "#fff44a";
+    private final String COLOR_CUBE = "#ffffff";
     private final String COLOR_BALL = "#e81b3d";
-
+    private int NumberOfPicture;
+    private int flag = 0;
 
 
     public Thread_for_game(SurfaceHolder holder) {
+        if (photo_mode_flag) {
+            COLOR_LAND = "#0017ab75";
+            NumberOfPicture = 0;
+        }
+        else COLOR_LAND = "#ff17ab75";
+
         tfg_SurfaceHolder = holder;
         tfg_Running = false;
     }
@@ -70,7 +67,7 @@ public class Thread_for_game extends Thread {
         return System.nanoTime() / 1_000_000;
     }
 
-    @SuppressLint("MissingPermission")
+    //Игровой цикл
     @Override
     public void run() {
         Canvas canvas;
@@ -86,33 +83,48 @@ public class Thread_for_game extends Thread {
                     canvas = tfg_SurfaceHolder.lockCanvas(); //получаем canvas
                     synchronized (tfg_SurfaceHolder) {
                         //Игровой цикл
-                        xonix.move();
-                        balls.move();
-                        cube.move();
-                        if (bonus_flag) {
-                            bonuses.add();
-                            bonuses.check_collect_bonus();
-                        }
-                        draw(canvas);
-                        if (xonix.isSelfCrosed() || balls.isHitTrackOrXonix() || cube.isHitXonix()) {//Если Xonix ранен
-                            vibrator.vibrate(200);
-                            xonix.decreaseCountLives();
-                            if (xonix.getCountLives() > 0) { //Есди игра продолжается
-                                xonix.init();
-                                field.clearTrack();
+                        if (flag > 0) {
+                            if (flag == 2) {
+                                draw_image(canvas);
+                                delay.wait(2000);
                             } else {
-                                vibrator.vibrate(500);
-                                new_game();//Если новая игра
+                                NumberOfPicture++;
+                                if (NumberOfPicture == 10) NumberOfPicture = 0;
+                                delay.wait(6000);
                             }
-                        }
-                        if (field.getCurrentPercent() >= PERCENT_OF_WATER_CAPTURE) {
-                            //Если переходим на следующий уровень
-                            field.init();
-                            xonix.init();
-                            xonix.level_up();
-                            cube.init();
-                            balls.add();
-                            if (add_life_flag) xonix.addCountLives(1);
+                            flag--;
+                        } else {
+                            draw(canvas);
+                            xonix.move();
+                            balls.move();
+                            cube.move();
+                            if (bonus_flag) {
+                                bonuses.add();
+                                bonuses.check_collect_bonus();
+                            }
+                            if (xonix.isSelfCrosed() || balls.isHitTrackOrXonix() || cube.isHitXonix()) {//Если Xonix ранен
+                                vibrator.vibrate(200);
+                                xonix.decreaseCountLives();
+                                if (xonix.getCountLives() > 0) { //Есди игра продолжается
+                                    xonix.init();
+                                    field.clearTrack();
+                                } else {
+                                    vibrator.vibrate(500);
+                                    new_game();//Если новая игра
+                                }
+                            }
+                            if (field.getCurrentPercent() >= PERCENT_OF_WATER_CAPTURE) {
+                                //Если переходим на следующий уровень
+                                field.init();
+                                xonix.init();
+                                xonix.level_up();
+                                cube.init();
+                                balls.add();
+                                if (add_life_flag) xonix.addCountLives(1);
+                                if (photo_mode_flag) {
+                                    flag = 2;
+                                }
+                            }
                         }
                     }
                 } catch (NullPointerException e) {
@@ -170,6 +182,7 @@ public class Thread_for_game extends Thread {
         void setCountScore(int c) { countScore = c; }
 
         int getCountScore() { return countScore; }
+
         float getCurrentPercent() { return ((float) Math.round((100f - currentWaterArea / WATER_AREA * 100) * 100) / 100); }
 
         void clearTrack() { // clear track of Xonix
@@ -229,7 +242,6 @@ public class Thread_for_game extends Thread {
     }
 
     class Xonix {
-
         private int x, y, countLives = 3, level = 1;
         private boolean isWater, isSelfCross;
 
@@ -246,8 +258,11 @@ public class Thread_for_game extends Thread {
         }
 
         int getX() { return x; }
+
         int getY() { return y; }
+
         int getCountLives() { return countLives; }
+
         int getLevel() {return level;}
 
         void decreaseCountLives() { countLives--; }
@@ -292,7 +307,7 @@ public class Thread_for_game extends Thread {
             Paint paint = new Paint();
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeWidth(POINT_SIZE / 3);
-            paint.setColor(Color.parseColor((field.getColor(x, y) == 1) ? COLOR_TRACK : COLOR_WHITE));
+            paint.setColor(Color.parseColor((field.getColor(x, y) == 1) ? COLOR_TRACK : COLOR_LAND));
             rect.set(x * POINT_SIZE, y * POINT_SIZE, x * POINT_SIZE + POINT_SIZE, y * POINT_SIZE + POINT_SIZE);
             canvas.drawRect(rect, paint);
             rect.set(x * POINT_SIZE + POINT_SIZE / 2, y * POINT_SIZE + POINT_SIZE / 2, x * POINT_SIZE + POINT_SIZE / 2, y * POINT_SIZE + POINT_SIZE  / 2);
@@ -359,6 +374,7 @@ public class Thread_for_game extends Thread {
         }
 
         int getX() { return x; }
+
         int getY() { return y; }
 
         boolean isHitTrackOrXonix() {
@@ -407,7 +423,7 @@ public class Thread_for_game extends Thread {
             Rect myRect = new Rect();
             Paint paint = new Paint();
             paint.setStyle(Paint.Style.STROKE);
-            paint.setColor(Color.WHITE);
+            paint.setColor(Color.parseColor(COLOR_CUBE));
             paint.setStrokeWidth(POINT_SIZE / 3);
             myRect.set(x * POINT_SIZE, y * POINT_SIZE, x * POINT_SIZE + POINT_SIZE, y * POINT_SIZE + POINT_SIZE);
             canvas.drawRect(myRect, paint);
@@ -506,7 +522,9 @@ public class Thread_for_game extends Thread {
         }
 
         int getX() {return x;}
+
         int getY() {return y;}
+
         int getType() {return type;}
     }
 
@@ -523,6 +541,8 @@ public class Thread_for_game extends Thread {
         paint.setColor(Color.WHITE);
         paint.setTextSize(40);
         paint.setStyle(Paint.Style.STROKE);
+        if (photo_mode_flag)
+            canvas.drawBitmap(Surface.bitmap[NumberOfPicture], 0, 0, paint);
         field.paint(canvas);
         xonix.paint(canvas);
         balls.paint(canvas);
@@ -530,6 +550,11 @@ public class Thread_for_game extends Thread {
         bonuses.paint(canvas);
 
         canvas.drawText("Level: " + xonix.getLevel() + "  Score: " + field.getCountScore() + "  Lives: " + xonix.getCountLives() + "  Full: " + field.getCurrentPercent() + "%", POINT_SIZE * 2, POINT_SIZE * (FIELD_HEIGHT - 2) - 3, paint);
+    }
+
+    private void draw_image(Canvas canvas) {
+        Paint paint = new Paint();
+        canvas.drawBitmap(Surface.bitmap[NumberOfPicture], 0, 0, paint);
     }
 
     private void new_game() {
@@ -542,6 +567,6 @@ public class Thread_for_game extends Thread {
         cube.init();
         field.init();
         field.setCountScore(0);
-
+        if (photo_mode_flag) NumberOfPicture = 0;
     }
 }

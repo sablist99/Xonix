@@ -21,14 +21,14 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fon"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/fon" />
 
     <SeekBar
         android:id="@+id/REDRAW_seekBar"
@@ -51,16 +51,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/Persent_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/REDRAW_seekBar" />
+
     <Switch
         android:id="@+id/Bonus_switch"
         android:layout_width="217dp"
         android:layout_height="23dp"
         android:layout_marginTop="25dp"
-        android:text="@string/Bonus_string"
         android:checked="true"
+        android:text="@string/Bonus_string"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/REDRAW_seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/Percent_seekBar" />
 
     <Switch
         android:id="@+id/Add_life_switch"
@@ -81,5 +91,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Add_life_switch" />
+
+    <SeekBar
+        android:id="@+id/Percent_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="249dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="25dp"
+        android:max="8"
+        android:progress="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_50"
+        app:layout_constraintBottom_toTopOf="@+id/Percent_seekBar"
+        app:layout_constraintStart_toStartOf="@+id/Percent_seekBar" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_70"
+        app:layout_constraintBottom_toTopOf="@+id/Percent_seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_90"
+        app:layout_constraintBottom_toTopOf="@+id/Percent_seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/Percent_seekBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

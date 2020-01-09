@@ -4,6 +4,10 @@
     <string name="Add_life_string">Увеличение жизней</string>
     <string name="Bonus_string">Бонусы</string>
     <string name="todo">TODO</string>
-    <string name="Redraw_display_string">Частота обновления экрана</string>
+    <string name="Redraw_display_string">Задержка прорисовки</string>
     <string name="Start_game_string">Начать игру</string>
+    <string name="Persent_string">Процент для победы</string>
+    <string name="_50">50</string>
+    <string name="_90">90</string>
+    <string name="_70">70</string>
 </resources>

@@ -1,4 +1,4 @@
-#Tue Jan 07 19:21:36 GMT+07:00 2020
+#Wed Jan 08 02:11:03 GMT+07:00 2020
 base.0=C\:\\Users\\Potap\\Desktop\\GitHub\\Xonix\\Android_Xonix\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

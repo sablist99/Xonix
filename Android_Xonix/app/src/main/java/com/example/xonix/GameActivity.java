@@ -1,12 +1,9 @@
 package com.example.xonix;
 
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import static com.example.xonix.Surface.POINT_SIZE;
 
 public class GameActivity extends AppCompatActivity {
     Surface surface;
@@ -27,20 +24,12 @@ public class GameActivity extends AppCompatActivity {
          */
         surface = new Surface(this);
         setContentView(surface);
-        //setContentView(R.layout.game);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//Приложение во весь экран
-        System.out.println("1");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         surface = null;
-        //System.out.println("2");
-
     }
-
-
-
-
 }

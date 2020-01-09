@@ -1,18 +1,16 @@
 package com.example.xonix;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
-import android.os.Vibrator;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.WindowManager;
 
+import static com.example.xonix.MainActivity.photo_mode_flag;
 
 public class Surface extends SurfaceView implements SurfaceHolder.Callback{
     private Thread_for_game TFG;
@@ -22,21 +20,29 @@ public class Surface extends SurfaceView implements SurfaceHolder.Callback{
     public static int FIELD_HEIGHT;
     public static int FIELD_WIDTH;
     public static int POINT_SIZE;
-    public static float xr, yr;
+    private static float xr, yr;
     private float xb, yb;
-    private boolean is_running = true;
-    public static Context mContext;
 
-
-
+    static Bitmap[] bitmap = new Bitmap[10];
 
     public Surface(Context context) {
         super(context);
 
-        mContext = context;
         getHolder().addCallback(this);
         initWidthAndHeight(context);
 
+        if(photo_mode_flag) {
+            bitmap[0] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_0), WIDTH, HEIGHT, false);
+            bitmap[1] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_1), WIDTH, HEIGHT, false);
+            bitmap[2] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_2), WIDTH, HEIGHT, false);
+            bitmap[3] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_3), WIDTH, HEIGHT, false);
+            bitmap[4] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_4), WIDTH, HEIGHT, false);
+            bitmap[5] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_5), WIDTH, HEIGHT, false);
+            bitmap[6] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_6), WIDTH, HEIGHT, false);
+            bitmap[7] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_7), WIDTH, HEIGHT, false);
+            bitmap[8] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_8), WIDTH, HEIGHT, false);
+            bitmap[9] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img_9), WIDTH, HEIGHT, false);
+        }
     }
 
     @Override
@@ -70,7 +76,6 @@ public class Surface extends SurfaceView implements SurfaceHolder.Callback{
     {
         float x;
         float y;
-
         int action = e.getAction();
 
         switch (action) {
